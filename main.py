@@ -9,7 +9,7 @@ data_frame = data_frame.copy()
 
 # Significant variables
 # --- (All the variables: ["log_BodyWt", "log_BrainWt", "Life", "log_GP", "P", "SE", "D"])
-significant_variables = ["log_GP", "D"]
+significant_variables = ["log_BodyWt", "log_GP", "D"]
 
 # Log the widespread variables to keep everything normal-ish
 data_frame["log_BodyWt"] = np.log(data_frame["BodyWt"])
@@ -61,4 +61,4 @@ plt.tight_layout()
 
 # Show and save
 plt.savefig("results_plot.png")
-plt.show()
+# plt.show()
