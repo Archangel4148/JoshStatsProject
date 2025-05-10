@@ -54,11 +54,11 @@ plt.plot(sorted_species, sorted_predictions, "o", label="Predicted Sleep (hours)
 # Format plot
 plt.xlabel("Species")
 plt.ylabel("Sleep (hours)")
-plt.xticks(rotation=90, fontsize=8, ha='center')  # ha = horizontal alignment
+plt.xticks(rotation=90, fontsize=8)  # Rotate the names so you can read them
 
 plt.legend()
 plt.tight_layout()
 
 # Show and save
 plt.savefig("results_plot.png")
-# plt.show()
+plt.show()
